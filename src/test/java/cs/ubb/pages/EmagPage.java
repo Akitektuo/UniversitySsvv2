@@ -10,26 +10,24 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@DefaultUrl("https://en.wiktionary.org/wiki/Wiktionary")
-public class DictionaryPage extends PageObject {
-
-    @FindBy(name = "search")
+@DefaultUrl("https://www.emag.ro/")
+public class EmagPage extends PageObject {
+    @FindBy(name = "query")
     private WebElementFacade searchTerms;
 
-    @FindBy(name = "go")
+    @FindBy(className = "searchbox-submit-button")
     private WebElementFacade lookupButton;
 
-    public void enter_keywords(String keyword) {
+    public void enterKeyword(String keyword) {
         searchTerms.type(keyword);
     }
 
-    public void lookup_terms() {
+    public void lookupKeyword() {
         lookupButton.click();
     }
 
-    public List<String> getDefinitions() {
-        WebElementFacade definitionList = find(By.tagName("ol"));
-        return definitionList.findElements(By.tagName("li")).stream()
+    public List<String> getTitles() {
+        return findAll(By.cssSelector("a.card-v2-title.semibold.mrg-btm-xxs.js-product-url")).stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }

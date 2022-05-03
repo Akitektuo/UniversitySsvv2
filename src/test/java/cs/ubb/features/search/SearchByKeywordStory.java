@@ -33,8 +33,4 @@ public class SearchByKeywordStory {
         ion.looks_for(name);
         ion.should_see_definition(definition);
     }
-
-    @Pending @Test
-    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
-    }
 } 
