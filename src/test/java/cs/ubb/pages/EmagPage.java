@@ -31,4 +31,5 @@ public class EmagPage extends PageObject {
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }
+
 }
