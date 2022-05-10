@@ -2,6 +2,7 @@ package cs.ubb.features.search;
 
 import cs.ubb.steps.serenity.EmagSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
+import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
@@ -16,6 +17,8 @@ public class SearchByKeywordEmag {
     public String name;
     public String title;
 
+
+    @Issue("#Emag-1")
     @Test
     public void searchByKeywordsShouldDisplayCorrespondingTitles() {
         steps.openHomePage();

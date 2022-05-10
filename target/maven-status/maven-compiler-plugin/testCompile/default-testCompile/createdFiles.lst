@@ -1,4 +1,10 @@
-cs\ubb\features\search\SearchByKeywordStory.class
 cs\ubb\pages\DictionaryPage.class
 cs\ubb\steps\serenity\EndUserSteps.class
+cs\ubb\pages\EmagLaptopsPage.class
+cs\ubb\steps\serenity\EmagSteps.class
+cs\ubb\features\search\SearchByKeywordEmag.class
+cs\ubb\features\search\SearchByKeywordStory.class
+cs\ubb\pages\EmagPage.class
+cs\ubb\steps\serenity\EmagLaptopsSteps.class
+cs\ubb\features\search\FilterByBrandEmag.class
 cs\ubb\features\search\package-info.class

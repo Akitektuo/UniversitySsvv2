@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: cs.ubb.features.search.SearchByKeywordStory
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 15.245 s <<< FAILURE! - in cs.ubb.features.search.SearchByKeywordStory
-cs.ubb.features.search.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article[0]  Time elapsed: 2.465 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "String.coder()" because "str" is null
-	at UniversitySsvv2@1.0-SNAPSHOT/cs.ubb.features.search.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article(SearchByKeywordStory.java:35)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.13 s - in cs.ubb.features.search.SearchByKeywordStory

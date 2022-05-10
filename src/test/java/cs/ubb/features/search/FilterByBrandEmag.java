@@ -2,6 +2,7 @@ package cs.ubb.features.search;
 
 import cs.ubb.steps.serenity.EmagLaptopsSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
+import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
@@ -16,6 +17,7 @@ public class FilterByBrandEmag {
     public String searchedBrand;
     public String expectedBrand;
 
+    @Issue("#Emag-2")
     @Test
     public void filterByBrandShouldDisplayCorrespondingProducts() {
         steps.openHomePage();
